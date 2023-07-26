@@ -1,10 +1,11 @@
+import NavBar from './components/navBar'
 import './styles/components/app.sass'
 
 function App() {
   
 
   return (
-    <h1>Landing Page Easybank</h1>
+    <NavBar/>
   )
 }
 
