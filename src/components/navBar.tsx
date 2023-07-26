@@ -14,18 +14,16 @@ function NavBar() {
           <Navbar.Brand href="#">
             <img src={Logo} alt="" />
           </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+            <Navbar.Toggle id='openNav' aria-controls={`offcanvasNavbar-expand-md`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-md`}
               aria-labelledby={`offcanvasNavbarLabel-expand-md`}
-              placement="end"
+              placement="top"
+              
             >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-                  Offcanvas
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Header closeButton className='items-center justify-content-end' />
+          
+              <Offcanvas.Body >
                 <Nav id='navCenter' className="justify-content-center flex-grow-1 pe-3">
                   <Nav.Link href="#action1">Home</Nav.Link>
                   <Nav.Link href="#action2">About</Nav.Link>
@@ -33,7 +31,7 @@ function NavBar() {
                   <Nav.Link href="#action2">Blog</Nav.Link>
                   <Nav.Link href="#action2">Careers</Nav.Link>
                 </Nav>
-                <Button id='buttonNav' href='#' >Request Invite</Button>
+                <Button id='buttonNav' href='#' className='d-none d-md-block' >Request Invite</Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
