@@ -1,0 +1,112 @@
+@use '../variables'
+@use '../mixins'
+
+
+#home
+    background-color: variables.$bg-white-gray
+    overflow: hidden
+   
+
+.principal-area
+    margin-bottom: 80px
+
+    @media screen and (min-width: variables.$desktop)
+        position: relative
+        margin-top: -100vh
+        margin-bottom: 0
+        height: 100vh
+        padding: 0
+
+
+
+.text-area
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    
+    margin-top: 20px
+    padding: 0 10px
+
+    h1
+        text-align: center
+
+        font-size: 42px
+        font-weight: 400
+        color: variables.$text-color-secundary
+    
+    p
+        text-align: center
+        font-size: 18px
+        color: variables.$text-color-primary
+        margin-top: 20px
+        
+
+
+    @media screen and (min-width: variables.$desktop)
+        width: 50%
+        height: 100%
+        padding-right: 100px
+        margin-top: 0px
+
+        h1
+            text-align: start
+            font-size: 52px
+             
+        p
+            text-align: start
+            font-size: 18px
+            color: variables.$text-color-primary
+            margin-top: 20px
+ 
+.image-area 
+
+    height: 390px
+    background-image: url('src/images/bg-intro-mobile.svg')
+    background-repeat: no-repeat
+    background-size: cover
+
+    img
+        height: 520px
+        object-fit: cover
+        margin-top: -35%
+        
+    
+
+    @media screen and (min-width: variables.$desktop) 
+        position: relative
+        width: 55%
+        height: 100vh
+        margin-left: 45%
+        background-image: url('src/images/bg-intro-desktop.svg')
+        background-position: 10% 75%
+        background-size: auto
+
+        img
+            height: auto
+            margin-top: -16%
+            margin-left: 15%
+    
+
+    
+.chose-area
+    height: 100vh
+    background-color: variables.$bg-white-blue
+    
+        
+    
+    
+
+.buttonInvite
+    @include mixins.btn
+    align-self: center
+    margin-top: 20px
+    
+
+    @media screen and (min-width: variables.$desktop)
+
+        align-self: flex-start
+        
+        
+    
+    

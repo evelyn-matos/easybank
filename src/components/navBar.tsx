@@ -9,7 +9,7 @@ import '../styles/components/navBar.sass'
 
 function NavBar() {
   return (
-        <Navbar id='navBar'  expand={'md'} className="container  mb-3">
+        <Navbar id='navBar'  expand={'md'} className="container ">
           <Container fluid >
           <Navbar.Brand href="#">
             <img src={Logo} alt="" />
