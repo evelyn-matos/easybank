@@ -20,30 +20,10 @@
 
 
 
-.text-area
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
+.text-area-principal
+    @include mixins.text-area
+   
     
-    margin-top: 20px
-    padding: 0 10px
-
-    h1
-        text-align: center
-
-        font-size: 42px
-        font-weight: 400
-        color: variables.$text-color-secundary
-    
-    p
-        text-align: center
-        font-size: 18px
-        color: variables.$text-color-primary
-        margin-top: 20px
-        
-
-
     @media screen and (min-width: variables.$desktop)
         width: 50%
         height: 100%
@@ -90,9 +70,33 @@
     
 
     
-.chose-area
-    height: 100vh
+.choose-area
     background-color: variables.$bg-white-blue
+
+    @media screen and (min-width: variables.$desktop)
+        height: 100vh
+
+.text-area-choose
+    @include mixins.text-area
+    padding: 80px 15px 40px 15px
+
+    p
+        padding: 0 10px
+
+    @media screen and (min-width: variables.$desktop)
+        align-items: flex-start
+        
+        p
+            width: 60%
+            padding: 0
+            text-align: start
+            
+
+
+    
+
+            
+            
     
         
     
@@ -109,5 +113,7 @@
         align-self: flex-start
         
         
-    
+.chose-area 
+   padding: 40px 20px
+
     
