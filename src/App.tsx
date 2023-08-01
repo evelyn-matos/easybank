@@ -2,6 +2,7 @@ import NavBar from './components/navBar';
 import './styles/components/app.sass';
 import ImagePrincipal from './images/image-mockups.png'
 import ChoseItem from './components/choseItem';
+import ArticleItem from './components/articleItem';
 
 
 
@@ -29,6 +30,10 @@ function App() {
             Control your finances like never before.</p>
             <ChoseItem/>
           </div>
+        </section>
+        <section className='articles-area container'>
+          <h3>Latest Articles</h3>
+          <ArticleItem/>
         </section>
       </div>
     </>
