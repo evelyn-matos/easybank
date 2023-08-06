@@ -3,6 +3,7 @@ import './styles/components/app.sass';
 import ImagePrincipal from './images/image-mockups.png'
 import ChoseItem from './components/choseItem';
 import ArticleItem from './components/articleItem';
+import Footer from './components/footer';
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <h3>Latest Articles</h3>
           <ArticleItem/>
         </section>
+        <Footer/>
       </div>
     </>
   )
