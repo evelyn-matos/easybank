@@ -37,9 +37,9 @@ export default function ChoseItem() {
 
     ]
   return (
-    <div className='choose-item-area'>
+    <div className='choose_item_area'>
         {ItemChose.map((item) => (
-            <div className='choose-item'>
+            <div className='choose_item'>
                 <img src={item.icone} alt={item.title} />
                 <span>{item.title}</span>
                 <p>{item.desc}</p>

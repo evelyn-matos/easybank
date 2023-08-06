@@ -8,7 +8,7 @@
     overflow: hidden
    
 
-.principal-area
+.principal_area
     margin-bottom: 80px
 
     @media screen and (min-width: variables.$desktop)
@@ -20,7 +20,7 @@
 
 
 
-.text-area-principal
+.principal_area_text
     @include mixins.text-area
    
     
@@ -40,7 +40,21 @@
             color: variables.$text-color-primary
             margin-top: 20px
  
-.image-area 
+
+
+.principal_area_button
+    @include mixins.btn
+    align-self: center
+    margin-top: 20px
+    
+
+    @media screen and (min-width: variables.$desktop)
+
+        align-self: flex-start
+        
+      
+
+.image_area 
 
     height: 390px
     background-image: url('/public/bg-intro-mobile.svg')
@@ -70,13 +84,14 @@
     
 
     
-.choose-area
+.choose_area
     background-color: variables.$bg-white-blue
+    padding: 40px 20px
 
     @media screen and (min-width: variables.$desktop)
         height: 100vh
 
-.text-area-choose
+.choose_area_text
     @include mixins.text-area
     padding: 80px 15px 40px 15px
 
@@ -91,7 +106,8 @@
             padding: 0
             text-align: start
 
-.articles-area
+
+.articles_area
     @include mixins.text-area
     margin-top: 80px
     margin-bottom: 80px
@@ -100,31 +116,4 @@
         height: 100vh
         align-items: flex-start
         margin: 0
-       
-           
-
-
-    
-
-            
-            
-    
-        
-    
-    
-
-.buttonInvite
-    @include mixins.btn
-    align-self: center
-    margin-top: 20px
-    
-
-    @media screen and (min-width: variables.$desktop)
-
-        align-self: flex-start
-        
-        
-.chose-area 
-   padding: 40px 20px
-
-    
+                  

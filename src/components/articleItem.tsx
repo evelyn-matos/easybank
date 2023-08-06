@@ -42,11 +42,11 @@ export default function ArticleItem() {
     ]
   return (
     
-    <div className='article-area'>
+    <div className='article_area'>
         {ItemArticle.map((item) => (
-            <div className='article-item'>
+            <div className='article_item'>
                 <img src={item.image} alt={item.title} />
-                <div className='article-item-info'>
+                <div className='article_item_info'>
                     <span>By {item.autor}</span>
                     <h4>{item.title}</h4>
                     <p>{item.desc}</p>
